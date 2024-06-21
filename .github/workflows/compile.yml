@@ -14,4 +14,4 @@ jobs:
 
     - name: Build From Source
       run: |
-        ./configure CC=c99 CFLAGS=-O2 LIBS=-lposix
+        ./configure 
