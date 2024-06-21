@@ -15,3 +15,4 @@ jobs:
     - name: Build From Source
       run: |
         ./configure 
+        make
