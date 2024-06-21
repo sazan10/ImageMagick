@@ -1,0 +1,17 @@
+name: Linux Build
+
+on: push
+
+jobs:
+  build:
+    name: Build on Ubuntu
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        ref: 33119d988baaa0e4d4df00c041cb6b9b8a411f94
+
+    - name: Build From Source
+      run: |
+         make
